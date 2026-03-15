@@ -42,9 +42,9 @@ export default function App() {
       setLoading(true);
 
       const [ratesRes, walletsRes, kycRes] = await Promise.all([
-        fetch(`http://127.0.0.1:5050/rates?ts=${Date.now()}`),
-        fetch(`http://127.0.0.1:5050/wallets?ts=${Date.now()}`),
-        fetch(`http://127.0.0.1:5050/kyc?ts=${Date.now()}`),
+        fetch(`https://swift-lipa.onrender.com/rates?ts=${Date.now()}`),
+        fetch(`https://swift-lipa.onrender.com/wallets?ts=${Date.now()}`),
+        fetch(`https://swift-lipa.onrender.com/kyc?ts=${Date.now()}`),
       ]);
 
       const ratesData = await ratesRes.json();

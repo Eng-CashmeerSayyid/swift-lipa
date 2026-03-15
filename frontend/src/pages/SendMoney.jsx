@@ -47,7 +47,7 @@ export default function SendMoney({
     try {
       setLoading(true);
 
-      const res = await fetch("http://127.0.0.1:5050/send", {
+      const res = await fetch("https://swift-lipa.onrender.com/send", {
         method: "POST",
         headers: {
           "Content-Type": "application/json",
